@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apa-Productoras de Animacion</title>
+    <link rel="shortcut icon" href="../img/apafavicon.png">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+
+</head>
+<body>
+    <div class="contenedor-grid">
+        <header class="header">
+            <nav class="botonera">
+                <a href="index.html">
+                    <img src="../img/apa_logo.png" alt="logo de apa">
+                </a>
+    
+                <ul>
+                    <li><a href="../index.html"> About </a></li>
+                <li><a href="../pages/reel.html"> Reel </a></li>
+                <li><a href="../pages/apalab.html"> Apa Lab </a></li>
+                <li><a href="../pages/studios.html"> Studios </a></li>
+                <li> <a href="../pages/contact.html"> Contact </a></li>
+                </ul>
+    
+            </nav>
+            </header>
+
+    <main class="containerContacto main">
+        <section class="formulario">
+            <!-- COMIENZA FOMRULARIO -->
+            <form action="envio.php">
+                <fieldset>
+                    <legend>Suscribe to our Newsletter</legend>
+                    <label for="name"> Name: </label>
+                    <input type="text" id="name" placeholder="name">
+
+                <br>
+                <br>
+                    <label for="name"> Surname: </label>
+                    <input type="text" id="name" placeholder="surname">
+                <br>
+                <br>
+                    <label for="mail"> Mail: </label>
+                    <input type="email" name="mail" id="mail" placeholder="ejemplo@mail.com">
+                <br>
+                <br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="tel" id="phone">
+                <br>
+                    <h4>Please select list(s) of interest</h4>
+                    <label for="apalab">APA LAB</label>
+                    <input type="checkbox" id="apalab" value="apalab">
+                <br>
+                    <label for="apaactivities"> APA Activities</label>
+                    <input type="checkbox" name="activities" id="apaactivities" value="apaactivities">
+                
+                    <h4>We are you from?</h4>
+                    <label for="argentina"> Agrentina</label>
+                    <input type="radio" id="argentina" name="origen" value="argentina"> 
+                    <br>
+                    <label for="othercountry"> Other country</label>
+                    <input type="radio" name="origen" id="othercountry" value="othercountry">
+                
+                    <h4> Plaese select you profile</h4>
+                    <select name="profile" id="">
+                        <option value="animator">Animator</option>
+                        <option value="producer">Producer</option>
+                        <option value="illustrator">Illustrator</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+
+                <label for="message">Leave a Message</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <br>
+                <input type="reset" value="cancel">
+                <input type="submit" value="send">
+            </form>
+            <!-- TERMINA FORMULARIO -->
+        </section>
+    </main>
+
+        <!-- MAPA -->
+        <section class="mapa main2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3811.173409220243!2d-64.3073573844999!3d-31.246410232883516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943283126054de13%3A0x403a3bd42ecc2cba!2sCentro%20de%20Producci%C3%B3n%20de%20Animaci%C3%B3n%20Quirino%20Cristiani!5e0!3m2!1ses!2sar!4v1653661026467!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    
+
+    <footer class="footer">
+        <div class="pie">
+            <h3>Seguinos en nuestras redes </h3>
+            <ul class="socials">
+                <li>
+                    <a href="https://www.facebook.com/APAAsociacionDeProductorxsDeAnimacionDeCordoba/?ref=page_internal" target="_blank" rel="noopener noreferrer">
+                    <img src="../img/fbk.png" alt="logo fbk">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/apa_cba/?fbclid=IwAR17_oY4YCrVVl5IouBf0du5Zqy9SaBaqw9TseE4xDZF_Iu8LqnF0EU7LuU" target="_blank" rel="noopener noreferrer">
+                    <img src="../img/ig.png" alt="logo ig">
+                    </a>
+                </li>
+
+                <li>
+            
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img src="../img/tw.png" alt="logo twitter">
+                    </a>
+                </li>    
+            </ul>
+        </div>
+     </footer>
+    </div>
+</body>
+</html>

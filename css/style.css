@@ -1,0 +1,330 @@
+
+*{
+    Font-Family: 'Roboto Condensed', 'Sans-Serif';
+    Font-Size: 35px;
+    Font-Family: 'Cabin', Sans-Serif;
+    Font-Size: 16px;    
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family:'Roboto Condensed', Sans-Serif;
+    font-size: 30px;
+    color: rgb(104, 194, 164);
+}
+
+h2 {
+    font-family:'Roboto Condensed', Sans-Serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 15px 10px;
+}
+
+h3 {
+    font-family: 'Cabin', Sans-Serif;
+    text-align: center;
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.9rem;
+    padding: 15px;
+}
+
+
+
+/*--------GRID MOBILE FIRST--------------*/
+
+.contenedor-grid{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 18% auto auto 12%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "texto"
+    "pie";
+}
+
+
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+    background-color: aqua;
+
+
+}
+
+    .main section img{
+        width: 100%;
+    }
+
+.main2{
+    grid-area: texto;
+    background-color: brown;
+}
+
+.footer{
+    grid-area: pie;
+    background-color: rgb(51, 103, 103);
+}
+
+.pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/*--------HEADER----------*/
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 227, 227);
+    
+}
+
+    header .botonera ul{
+        display: flex;
+        list-style: none;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+        header .botonera ul li{
+            margin-right: 10px;
+        }
+
+            header .botonera ul li a{
+                text-decoration: none;
+                color: rgb(0, 160, 152);
+            }
+
+    header .botonera a img {
+        margin-top: 15px;
+    }
+
+/*-------------MAIN ABOUT---------------*/
+
+.main2 h1{
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*--------------MAIN REEL-----------------*/
+
+div .video{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*------------MAIN APALAB------------------*/
+
+#textReduce{
+    font-size: 18px;
+    padding: 2px;
+    margin: 3px;
+}
+
+.responsiveImg{
+    width: 100%;
+    height: auto;
+}
+
+/*--------------MAIN STUDIOS-------------------*/
+
+div.gallery{
+    flex-direction: column;
+    text-align: center;
+}
+
+    .gallery img{
+        width: 90%;
+        height: auto;
+        margin: 5px;
+    }
+
+.textStudios h2{
+    font-size: 16px;
+}
+
+/*----------------MAIN CONTACT---------------------*/
+
+.containerContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.formulario{
+    padding: 25px;
+
+}
+
+.mapa iframe{
+    width: 80%;
+    padding: 25px;
+}
+
+
+/*-------FOOTER----*/
+footer {
+    padding: 20px 20px;
+}
+
+    footer .pie h3{
+        padding: 10px;
+    }
+    .pie{
+        display: flex;
+        flex-direction: column;
+    }
+
+.socials {
+    list-style: none;
+    display: flex;
+}
+
+
+.socials li a img{
+    width: 30px;
+    padding: 5px;
+}
+
+
+
+
+/* ========== MEDIA QUERY ================ */
+
+@media (min-width:768px){
+    .contenedor-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 16% 1fr 12%;
+        grid-template-areas: 
+        "header header"
+        "main texto"
+        "pie pie";
+    }
+
+    header{
+        display: block;
+    }
+
+        header .botonera a img{
+            padding: 15px;
+            
+        }
+            nav.botonera {
+                display: flex;
+                justify-content: space-between;
+    
+            }
+
+                nav.botonera ul{
+                    padding: 15px;
+                }
+
+    h1{
+        margin-left: 15px;
+    }
+
+    p{
+        padding: 25px;
+        font-size: 18px;
+    }
+    #textReduce{
+        font-size: 26px;
+    }
+
+    .main{
+        display: flex;
+        align-items: center;
+    }
+
+        .main section img{
+            width: 160%;
+        }
+
+    .main2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .main .imgContainer{
+        flex-direction: column;
+    
+    }
+
+    #galleryLeft{
+        display:block ;
+    }
+
+    .pie{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .containerContacto{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+
+}
+
+
+@media (min-width:1024px){
+    .contenedor-grid{
+        grid-template-columns: repeat(2, 70% 30%);
+        overflow-x: hidden;
+    }
+
+
+
+#galleryLeft{
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 250px;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
