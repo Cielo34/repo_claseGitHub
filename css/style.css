@@ -32,6 +32,25 @@ p {
     padding: 15px;
 }
 
+.scale:hover{
+    transform:scaleX(1.2);
+    cursor: pointer;
+}
+
+/*------------ANIMACIONES--------------*/
+
+@keyframes animateMain{
+    0%{width: 10%;}
+    100%{width: 100%;}
+}
+
+.animate{
+    animation-name: animateMain;
+    animation-iteration-count:initial;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
 
 
 /*--------GRID MOBILE FIRST--------------*/
